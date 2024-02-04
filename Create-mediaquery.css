@@ -1,0 +1,64 @@
+@media screen and (max-width:1440px) {
+    .logo img{
+        width:150px;
+        height: 100px;
+    }
+     .box1 h1{
+        font-size: 2rem;
+        margin-bottom: 0.4rem;  
+        margin-top: 20px;
+    }
+    .box2 p{
+        font-size: 1.3rem;
+    }
+    #Create-pass{
+        height: 3.5rem;
+
+    }
+    button{
+        font-size: 1.3rem;
+        height:3.5rem ;
+
+    }
+    main{
+        max-width: 510px;
+    }
+}
+    
+@media screen and (max-width:550px) {
+    .logo img{
+        width:100px;
+        height: 70px;
+    }
+     .box1 h1{
+        font-size: 2rem;
+        margin-bottom: 0.4rem;  
+        margin-top: 20px;
+    }
+    .box2 p{
+        font-size: 1rem;
+    }
+    #Create-pass{
+        height: 3rem;
+        width: 300px;
+
+    }
+    button{
+        font-size: 1.3rem;
+        height:3.5rem ;
+        width: 300px;
+
+    }
+    main{
+        max-width: 360px;
+        padding: 10px 20px;
+        
+    }
+    .lan a{
+        top: 1.7rem;
+        right: 2rem;
+        font-size: 1.3rem;
+    }
+}
+    
+

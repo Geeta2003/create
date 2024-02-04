@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Create Account1</title>
+    <link rel="icon" href="net img/N.png" />
+    <link rel="stylesheet" href="Create.css"/>
+    <link rel="stylesheet" href="Create-mediaquery.css"/>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+        <img src="net img/logo (1).png">
+    </div>
+    <div class="lan">
+        <a href="signin.html">Sign In</a>
+    </div>
+  </nav>
+ 
+  <main>
+    <div class="box1">
+        <h1>Welcome back! <br>
+        Joining Netflix is easy</h1>
+    </div>
+
+    <div class="box2">
+        <p>
+            Enter your password and you'll be watching in no time.
+        </p>
+    </div>
+
+    <div class="box3">
+        <div class="Email-box">
+            <p>Email</p>
+            <h5 id="emailvalue"></h5>
+        </div>
+
+        <div class="Password-box">
+            <p>Password</p>
+            <input type="text" placeholder="Enter your passsword" id="Create-pass">
+            <button onclick="password()" id="psbtn">Confirm</button>
+        </div>
+    </div>
+
+    <a class="link-forgot-password" data-uia="link-forgot-password" href="/LoginHelp">Forgot your password?</a>
+
+    <div class="submitBtnContainer">
+        <button type="submit"  >Next</button>
+    </div>
+  </main>
+  
+
+
+
+  <script>
+
+    //Accessing email value
+
+    var a=localStorage.getItem('myvalue');
+    // alert("the value received is"+a);
+    let emailvalue=document.querySelector('#emailvalue');
+    emailvalue.innerHTML=a;
+
+    //accessing pasaword
+
+    function password(){
+    let pass=document.querySelector('#Create-pass');
+    let CPass=pass.value;
+    console.log('password'+CPass);
+    localStorage.setItem('password',CPass);
+    }
+  
+  </script>
+</body>
+</html>
